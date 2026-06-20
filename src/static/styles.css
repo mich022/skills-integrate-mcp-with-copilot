@@ -24,6 +24,35 @@ header {
   border-radius: 5px;
 }
 
+#auth-panel {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#auth-status {
+  margin-bottom: 12px;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+#auth-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-form input {
+  min-width: 220px;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -111,18 +140,18 @@ section h3 {
 }
 
 .delete-btn {
-  background: none;
+  background: #c62828;
   border: none;
-  color: #c62828;
+  color: white;
   cursor: pointer;
-  font-size: 14px;
-  padding: 2px 5px;
+  font-size: 13px;
+  padding: 4px 10px;
   transition: all 0.2s;
-  border-radius: 3px;
+  border-radius: 999px;
 }
 
 .delete-btn:hover {
-  background-color: #ffebee;
+  background-color: #8e1b1b;
 }
 
 .participants-section p {
@@ -162,6 +191,27 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+#signup-form.disabled {
+  opacity: 0.85;
+}
+
+#signup-form.disabled .form-group input,
+#signup-form.disabled .form-group select,
+#signup-form.disabled button {
+  pointer-events: none;
+}
+
+#teacher-tools {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+#teacher-tools h4 {
+  margin-bottom: 16px;
+  color: #1a237e;
 }
 
 .message {
